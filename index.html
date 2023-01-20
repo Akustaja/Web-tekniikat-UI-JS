@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Stylesheets -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Scripts -->
+    <script src="js/script.js" defer></script>
+    <title>Web-tekniikat, UI- ja JS-harjoitus</title>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <span class="material-symbols-outlined archive">
+                sticky_note_2
+            </span>
+            <span class="material-symbols-outlined add">
+                add
+            </span>
+            <span class="material-symbols-outlined info">
+                info
+            </span>
+        </header>
+        <article>
+            <form class="form main">
+                <h3>Name</h3>
+                <input type="text" name="nameInput" id="nameInput">
+
+                <h3>Note</h3>
+                <textarea name="noteInput" id="noteInput" cols="30" rows="10"></textarea>
+
+                <input type="checkbox" name="important" id="important"> 
+                <h3>Important</h3>
+
+                <button type="submit">Add note</button>
+            </form>
+
+            <div class="notes">
+                
+            </div>
+            
+
+        </article>
+
+        <aside class="main">
+            <img src="images/notes.png" alt="" srcset="">
+            <a href="https://pixabay.com/vectors/notes-office-pages-papers-print-150587/">Image: Pixabay</a>
+        </aside>
+
+        <div id="info" class="hide">
+            <h2>Page information</h2>
+            <p>This page functions as a personal notes/blog service for the purpose of coursework.</p>
+            <p>The font and the icons are from <a href="https://fonts.google.com/">Google Fonts</a>.</p>
+            <p>The image is from <a href="https://pixabay.com/vectors/notes-office-pages-papers-print-150587/">Pixabay</a>.</p>
+            <p>This site was created by <a href="https://github.com/Akustaja/">Aku Nikula</a>.</p>
+        </div>
+    </div>
+</body>
+</html>

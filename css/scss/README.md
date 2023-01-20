@@ -1,0 +1,1 @@
+The scss file is included in GitHub for the purpose of the course so that it may be inspected if needed.

@@ -1,0 +1,156 @@
+/* Palette */
+
+$darker: #0D1821;
+$dark: #344966;
+$light: #B4CDED;
+$lighter: #F0F4EF;
+
+/* General style + removing default values */
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto Mono', monospace;
+    background-color: $lighter;
+    color: $darker;
+}
+
+/* Grid layout */
+
+#container{
+    display: grid;
+    grid-template-columns: auto 30vw 30vw auto;
+    grid-template-rows: 8vh 92vh;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Sections */
+
+header{
+    grid-column: 1/5;
+    grid-row: 1/2;
+    background-color: $dark;
+    padding: 5px;
+
+    /* Icons */
+    display: flex;
+    span{
+        margin: auto;
+        cursor: pointer;
+    }
+}
+
+
+article, #info{
+    grid-column: 2/4;
+    grid-row: 2/4;
+    background-color: $light;
+    padding: 5px;
+}
+
+aside{
+    grid-column: 3/4;
+    grid-row: 2/3;
+    font-size: 0.75em;
+
+    >img{
+        display: block;
+        max-width: 20vw;
+        margin: 2em;
+    }
+
+    >a{
+        margin-left: 40%;
+        color: $darker;
+    }
+}
+
+/* Sub-Sections */
+
+.form{
+    margin: 0px 15px;
+
+    
+    textarea{
+        display: block;
+    }
+    
+    #important{
+        margin: 15px 0px;
+    
+        +h3{
+        display: inline;
+        
+        +button{
+            display: block;
+            min-width: 5em;
+            min-height: 2em;
+            }
+        }
+    }
+}
+
+.notes{
+    display: flex;
+    flex-direction: column;
+    >span{
+        border: 1px solid $darker;
+        border-radius: 2px;
+        margin: 2px 5px;
+        background-color: $lighter;
+        width: 44vw;
+        min-height: 10.25vh;
+        margin-top: 5px;
+
+        h3{
+            margin: 3px;
+        }
+    }
+
+    .highlight{
+        border: 3px solid red;
+    }
+}
+
+#info{
+    padding: 35px;
+    p{
+        margin: 50px 0px;
+        >a{
+            color: $darker;
+        }
+    }
+}
+
+.hide{
+    display: none;
+}
+
+
+
+/* Responsiveness */
+
+@media screen and (max-width: 640px) {
+    article, #info{
+        grid-column: 1/5;
+
+        .notes{
+
+            >span{
+                width: 74vw;
+                margin: 2px auto;
+            }
+    
+        }
+    }
+
+    aside{
+        display: none;
+    }
+
+    
+}
